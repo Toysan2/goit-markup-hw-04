@@ -66,6 +66,15 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+svg {
+    fill: #2196f3 !important;
+}
+svg:hover {
+    fill: var(--only-blue);
+}
+svg:focus {
+    fill: var(--only-blue);
+}
 .contact-font {
     font-style: normal;
     text-decoration: none;
