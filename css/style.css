@@ -15,6 +15,7 @@ body {
     --only-blue: #2196f3;
     --dark-background: #2f303a;
     --grey-background: #f5f4fa;
+    --grey-icon: #afb1b8;
 }
 ul {
     list-style-type: none;
@@ -34,10 +35,24 @@ ul {
 .background-grey {
     background-color: var(--grey-background);
 }
+svg {
+    fill: var(--grey-font);
+}
+.icon-hover:hover .contact-icon,
+.icon-hover:hover .contact-link {
+    fill: var(--only-blue);
+    color: var(--only-blue);
+}
+.icon-hover:focus .contact-icon,
+.icon-hover:focus .contact-link {
+    fill: var(--only-blue);
+    color: var(--only-blue);
+}
 /*header*/
 .header {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
+    max-width: 1600px;
 }
 .header-wrapper {
     display: flex;
@@ -66,15 +81,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-svg {
-    fill: #2196f3 !important;
-}
-svg:hover {
-    fill: var(--only-blue);
-}
-svg:focus {
-    fill: var(--only-blue);
-}
 .contact-font {
     font-style: normal;
     text-decoration: none;
@@ -84,14 +90,17 @@ svg:focus {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .contact-font:hover,
 .header-font:hover {
     color: var(--only-blue);
 }
+
 .contact-font:focus,
 .header-font:focus {
     color: var(--only-blue);
 }
+
 .logo {
     font-family: 'Raleway';
     color: var(--only-blue);
@@ -110,11 +119,16 @@ svg:focus {
 /* HERO */
 .hero {
     color: var(--white-font);
-    background-color: var(--dark-background);
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    max-width: 1600px;
+}
+.background-image {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/about-us/hero-background.jpg);
+    background-repeat: no-repeat;
 }
 .hero-slogan {
     margin-bottom: 30px;
@@ -137,6 +151,15 @@ svg:focus {
     margin: 0 auto;
 }
 /* LOREM IPSUM - index.html*/
+.icon-article {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--grey-background);
+    border-radius: 4px;
+}
 .ul-article {
     justify-content: center;
     display: flex;
@@ -149,6 +172,8 @@ svg:focus {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 30px;
 }
 .article-text {
     color: var(--text-color2);
@@ -186,8 +211,10 @@ svg:focus {
 ul#team li {
     display: inline;
     justify-content: center;
-    border: 1px solid #eeeeee;
     background-color: var(--white-font);
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 0px 0px rgba(0, 0, 0, 0.14), 0px 3px 0px 0px rgba(0, 0, 0, 0.12);
 }
 .employee-name {
     color: var(--dark-font);
@@ -201,7 +228,50 @@ ul#team li {
     color: var(--grey-font);
     font-size: 16px;
     line-height: 1.1875;
+    padding-bottom: 16px;
+}
+.icons-employee {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding-bottom: 30px;
+}
+.icon-employee-size {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon:hover .icon-employee-size,
+.social-icon:hover .icon-employee-details {
+    background: var(--only-blue);
+    fill: var(--white-font);
+}
+.icon-employee-size:hover {
+    background: var(--only-blue);
+    border-radius: 50%;
+}
+.social-icon:focus .icon-employee-size,
+.social-icon:focus .icon-employee-details {
+    background: var(--only-blue);
+    fill: var(--white-font);
+}
+.icon-employee-size:focus {
+    background: var(--only-blue);
+    border-radius: 50%;
+}
+/* Nasi klienci */
+.icon-clients-size {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-icon {
+    fill: #212121;
 }
 /* Footer */
 .footer {
