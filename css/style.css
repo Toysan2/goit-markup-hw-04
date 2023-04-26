@@ -127,7 +127,7 @@ svg {
 }
 .background-image {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/about-us/hero-background.jpg);
+        url(./images/about-us/hero-background.jpg);
     background-repeat: no-repeat;
 }
 .hero-slogan {
@@ -271,7 +271,6 @@ ul#team li {
     align-items: center;
 }
 .client-icon {
-    fill: #212121;
 }
 /* Footer */
 .footer {
