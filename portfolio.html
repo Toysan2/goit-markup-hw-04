@@ -39,14 +39,30 @@
                 </nav>
                 <ul class="header-contacts">
                     <li>
-                        <a class="contact-font" href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
+                        <div class="icon-hover">
+                            <svg class="contact-icon" width="16" height="12">
+                                <use
+                                    href="./images/svg/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            <a
+                                class="contact-font contact-link"
+                                href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </div>
                     </li>
                     <li>
-                        <a class="contact-font" href="tel:48111111111"
-                            >+48 111 111 111</a
-                        >
+                        <div class="icon-hover">
+                            <svg class="contact-icon" width="10" height="16">
+                                <use
+                                    href="./images/svg/icons.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                            <a class="contact-font" href="tel:48111111111"
+                                >+48 111 111 111</a
+                            >
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -82,7 +98,7 @@
                     <!-- Główna treść strony-->
 
                     <ul class="products">
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img.jpg"
                                 alt="Zdjęcia 3 pracowników"
@@ -96,7 +112,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-1.jpg"
                                 alt="Koszykarzy walczących o piłkę"
@@ -110,7 +126,7 @@
                                 <p class="product-description">Dizajn</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-2.jpg"
                                 alt="Logo restauracji The Seafood"
@@ -124,7 +140,7 @@
                                 <p class="product-description">Aplikacja</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-3.jpg"
                                 alt="Czarne słuchawki"
@@ -136,7 +152,7 @@
                                 <p class="product-description">Marketing</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-4.jpg"
                                 alt="Dwa pudełka"
@@ -148,7 +164,7 @@
                                 <p class="product-description">Aplikacja</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-5.jpg"
                                 alt="Strona analizjąca mapę świata"
@@ -164,7 +180,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-6.jpg"
                                 alt="Zdjęcie magazynu Limited Edition"
@@ -178,7 +194,7 @@
                                 <p class="product-description">Dizajn</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-7.jpg"
                                 alt="Plakietka z napisem LABEL TAG"
@@ -190,7 +206,7 @@
                                 <p class="product-description">Marketing</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product">
                             <img
                                 src="images/portfolio/img-8.jpg"
                                 alt="Zdjęcie laptopa wyświetlającego stronę Growing Business"
@@ -207,24 +223,76 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container">
-                <a class="logo" href="./index.html"
-                    >Web<span class="logo-white">Studio</span></a
-                >
-                <address class="footer-font footer-wrapper">
-                    <a
-                        class="address"
-                        href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
-                        target="_blank"
-                        >m. Warszawa, Aleje Jerozolimskie 21</a
+            <div class="container footer-wrapper">
+                <div class="address-container">
+                    <a class="logo" href="./index.html"
+                        >Web<span class="logo-white">Studio</span></a
                     >
-                    <a class="footer-font" href="mailto:info@example.com"
-                        >info@example.com</a
-                    >
-                    <a class="footer-font" href="tel:48111111111"
-                        >+48 111 111 111</a
-                    >
-                </address>
+                    <address class="footer-font address-container">
+                        <a
+                            class="address"
+                            href="https://goo.gl/maps/V1taE6vsMn2LFqJW6"
+                            target="_blank"
+                            >m. Warszawa, Aleje Jerozolimskie 21</a
+                        >
+                        <a class="footer-font" href="mailto:info@example.com"
+                            >info@example.com</a
+                        >
+                        <a class="footer-font" href="tel:48111111111"
+                            >+48 111 111 111</a
+                        >
+                    </address>
+                </div>
+
+                <div class="join-us-container">
+                    <h4 class="join-us">DOŁĄCZ DO NAS</h4>
+                    <div class="join-us-social">
+                        <div class="join-us-size">
+                            <svg
+                                class="icon-employee-details"
+                                width="20"
+                                height="20"
+                            >
+                                <use
+                                    href="./images/svg/icons.svg#icon-instagram-2"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="join-us-size">
+                            <svg
+                                class="icon-employee-details"
+                                width="20"
+                                height="20"
+                            >
+                                <use
+                                    href="./images/svg/icons.svg#icon-twitter-1"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="join-us-size">
+                            <svg
+                                class="icon-employee-details"
+                                width="20"
+                                height="20"
+                            >
+                                <use
+                                    href="./images/svg/icons.svg#icon-facebook-1"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="join-us-size">
+                            <svg
+                                class="icon-employee-details"
+                                width="20"
+                                height="20"
+                            >
+                                <use
+                                    href="./images/svg/icons.svg#icon-linkedin-1"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

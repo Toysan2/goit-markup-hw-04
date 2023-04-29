@@ -52,7 +52,6 @@ svg {
 .header {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
-    max-width: 1600px;
 }
 .header-wrapper {
     display: flex;
@@ -209,12 +208,10 @@ svg {
     gap: 30px;
 }
 ul#team li {
-    display: inline;
-    justify-content: center;
     background-color: var(--white-font);
     border-radius: 4px;
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 0px 0px rgba(0, 0, 0, 0.14), 0px 3px 0px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .employee-name {
     color: var(--dark-font);
@@ -236,25 +233,31 @@ ul#team li {
     gap: 10px;
     padding-bottom: 30px;
 }
-.icon-employee-size {
+.join-us-size {
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
-
-.icon-employee-size:hover .icon-employee-details {
+.icon-employee-details {
     fill: var(--white-font);
 }
-.icon-employee-size:hover {
+
+.join-us-size:hover .icon-employee-details {
+    fill: var(--white-font);
+}
+.join-us-size:hover {
     background: var(--only-blue);
     border-radius: 50%;
 }
-.icon-employee-size:focus .icon-employee-details {
+
+.join-us-size:focus .icon-employee-details {
     fill: var(--white-font);
 }
-.icon-employee-size:focus {
+.join-us-size:focus {
     background: var(--only-blue);
     border-radius: 50%;
 }
@@ -293,6 +296,7 @@ ul#team li {
 }
 .footer-wrapper {
     display: flex;
+    gap: 70px;
 }
 .footer-font {
     font-style: normal;
@@ -309,12 +313,12 @@ ul#team li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-top: 20px;
 }
-.address-wrapper {
+.address-container {
     display: flex;
     flex-direction: column;
     gap: 9px;
-    padding-top: 20px;
 }
 .footer-font:hover {
     color: var(--only-blue);
@@ -335,7 +339,6 @@ ul#team li {
 .join-us-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .join-us-social {
     display: flex;
@@ -386,6 +389,10 @@ ul#team li {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.product:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .product-name {
     margin: 0;
