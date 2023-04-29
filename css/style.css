@@ -127,7 +127,7 @@ svg {
 }
 .background-image {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/about-us/hero-background.jpg);
+        url('../images/about-us/hero-background.jpg');
     background-repeat: no-repeat;
 }
 .hero-slogan {
@@ -244,33 +244,47 @@ ul#team li {
     align-items: center;
 }
 
-.social-icon:hover .icon-employee-size,
-.social-icon:hover .icon-employee-details {
-    background: var(--only-blue);
+.icon-employee-size:hover .icon-employee-details {
     fill: var(--white-font);
 }
 .icon-employee-size:hover {
     background: var(--only-blue);
     border-radius: 50%;
 }
-.social-icon:focus .icon-employee-size,
-.social-icon:focus .icon-employee-details {
-    background: var(--only-blue);
+.icon-employee-size:focus .icon-employee-details {
     fill: var(--white-font);
 }
 .icon-employee-size:focus {
     background: var(--only-blue);
     border-radius: 50%;
 }
+
 /* Nasi klienci */
+.client-icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 .icon-clients-size {
     width: 170px;
     height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--grey-icon);
+    border-radius: 4px;
 }
-.client-icon {
+.icon-clients-size:hover .client-icons {
+    fill: var(--only-blue);
+}
+.icon-clients-size:hover {
+    border-color: var(--only-blue);
+}
+.icon-clients-size:focus .client-icons {
+    fill: var(--only-blue);
+}
+.icon-clients-size:focus {
+    border-color: var(--only-blue);
 }
 /* Footer */
 .footer {
@@ -279,9 +293,6 @@ ul#team li {
 }
 .footer-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 9px;
-    padding-top: 20px;
 }
 .footer-font {
     font-style: normal;
@@ -299,12 +310,48 @@ ul#team li {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 20px;
+}
 .footer-font:hover {
     color: var(--only-blue);
 }
 .footer-font:focus {
     color: var(--only-blue);
 }
+.join-us {
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 24px;
+    line-height: 146%;
+    letter-spacing: 3%;
+    color: var(--white-font);
+    padding-bottom: 20px;
+}
+.join-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.join-us-social {
+    display: flex;
+    gap: 10px;
+}
+.join-us-size {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo-container {
+    display: flex;
+}
+
 /* main - filters - portfolio.html */
 .button {
     border: none;
