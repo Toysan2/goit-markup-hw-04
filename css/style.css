@@ -38,16 +38,7 @@ ul {
 svg {
     fill: var(--grey-font);
 }
-.icon-hover:hover .contact-icon,
-.icon-hover:hover .contact-link {
-    fill: var(--only-blue);
-    color: var(--only-blue);
-}
-.icon-hover:focus .contact-icon,
-.icon-hover:focus .contact-link {
-    fill: var(--only-blue);
-    color: var(--only-blue);
-}
+
 /*header*/
 .header {
     padding: 24px 0 25px;
@@ -90,14 +81,17 @@ svg {
     letter-spacing: 0.02em;
 }
 
+.contact-font:hover .contact-icon,
 .contact-font:hover,
 .header-font:hover {
     color: var(--only-blue);
+    fill: currentColor;
 }
-
+.contact-font:focus .contact-icon,
 .contact-font:focus,
 .header-font:focus {
     color: var(--only-blue);
+    fill: currentColor;
 }
 
 .logo {
@@ -122,12 +116,13 @@ svg {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    max-width: 1600px;
 }
 .background-image {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/about-us/hero-background.jpg');
+    display: block;
+    background: url('../images/about-us/hero-background.jpg');
     background-repeat: no-repeat;
+    background-color: var(--dark-background);
+    background-position: center;
 }
 .hero-slogan {
     margin-bottom: 30px;
@@ -233,35 +228,30 @@ ul#team li {
     gap: 10px;
     padding-bottom: 30px;
 }
-.join-us-size {
+.icon-employee-size {
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-.icon-employee-details {
-    fill: var(--white-font);
 }
 
-.join-us-size:hover .icon-employee-details {
+.icon-employee-size:hover .icon-employee-details {
     fill: var(--white-font);
 }
-.join-us-size:hover {
+.icon-employee-size:hover {
+    fill: var(--white-font);
     background: var(--only-blue);
     border-radius: 50%;
 }
-
-.join-us-size:focus .icon-employee-details {
+.icon-employee-size:focus .icon-employee-details {
     fill: var(--white-font);
 }
-.join-us-size:focus {
+.icon-employee-size:focus {
+    fill: var(--white-font);
     background: var(--only-blue);
     border-radius: 50%;
 }
-
 /* Nasi klienci */
 .client-icons-container {
     display: flex;
@@ -344,17 +334,38 @@ ul#team li {
     display: flex;
     gap: 10px;
 }
+
+.footer-logo-container {
+    display: flex;
+}
 .join-us-size {
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
-.footer-logo-container {
-    display: flex;
+.icon-join-us-details {
+    fill: var(--white-font);
 }
 
+.join-us-size:hover .icon-join-us-details {
+    fill: var(--white-font);
+}
+.join-us-size:hover {
+    background: var(--only-blue);
+    border-radius: 50%;
+}
+
+.join-us-size:focus .icon-join-us-size-details {
+    fill: var(--white-font);
+}
+.join-us-size:focus {
+    background: var(--only-blue);
+    border-radius: 50%;
+}
 /* main - filters - portfolio.html */
 .button {
     border: none;
@@ -390,26 +401,24 @@ ul#team li {
     flex-wrap: wrap;
     gap: 30px;
 }
+.product-footer {
+    margin-top: -4px;
+    gap: 4px;
+    padding: 20px 24px;
+    border: 1px solid #ececec;
+}
 .product:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .product-name {
-    margin: 0;
     color: var(--dark-background);
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 4px;
 }
 .product-description {
-    margin: 0;
     color: var(--grey-font);
     font-size: 16px;
     line-height: 1.875;
-    padding-top: 4px;
-    padding-left: 24px;
-    padding-bottom: 20px;
 }
