@@ -80,7 +80,9 @@ svg {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
+.contact-icon {
+    margin-right: 10px;
+}
 .contact-font:hover .contact-icon,
 .contact-font:hover,
 .header-font:hover {
@@ -294,10 +296,11 @@ ul#team li {
     color: var(--ash-font);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.02em;
 }
 .address {
+    font-style: normal;
     color: var(--white-font);
     text-decoration: none;
     font-size: 14px;
@@ -329,6 +332,7 @@ ul#team li {
 .join-us-container {
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
 }
 .join-us-social {
     display: flex;
